@@ -1,0 +1,76 @@
+
+<div class="container-heading">
+    <h1>Student List</h1>
+</div>
+
+<!-- ++++++++++ Add & Search +++++++++++++ -->
+<div class="add_search">
+<div class="Std_add">
+  <button class="btn_add" routerLink="/admin/student/add">
+    <i class="bi bi-plus-lg"></i>
+  </button>
+</div>
+
+
+<div class="search">
+  <input type="text" class="form-control" placeholder="Search here....." [(ngModel)]="searchId">
+  <i class="bi bi-search"></i>
+  <button class="btn_seach" (click)="searchStudentById()">Search</button>
+</div>
+</div>
+
+
+<!-- ++++++++++++++++++++++++++++ -->
+
+<div class="table-container">
+    <div class="table-heading">
+      <div class="table-cell-heading">ID</div>
+      <div class="table-cell-heading">Name</div>
+      <div class="table-cell-heading">Email</div>
+      <div class="table-cell-heading">City name</div>
+      <div class="table-cell-heading">MobNo</div>
+      <div class="table-cell-heading">gender</div>
+    </div>
+    <div class="table-row" *ngFor="let item of students">
+      <div class="table-cell">{{ item.id }}</div>
+      <div class="table-cell">{{capitalizeFirstLetter(item.name) }}</div>
+      <div class="table-cell">{{ item.email }}</div>
+      <div class="table-cell">{{ item.city_name }}</div>
+      <div class="table-cell">{{ item.mobno }}</div>
+      <div class="table-cell">{{ item.gender }}</div>
+
+      <div class="table-cell-button">
+        <button class="btn1" routerLink="/admin/student/update/{{item.id}}">
+          <i class="bi bi-pencil-fill"></i></button>
+        
+
+
+        <button class="btn2" (click)="deleteStudent(item.id)">
+          <i class="bi bi-trash3"></i>
+        </button>
+        
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- +++++++++++++ Loading Overlay ++++++++++++++++ -->
+<div class="loading-overlay" *ngIf="isLoading">
+  <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+  </div>
+  <div>Please wait...</div>
+</div>
+
+
+<!-- +++++++++++ paging concept +++++++++++++++ -->
+
+<!-- <div class="pagination-controls" *ngIf="totalItems > 0">
+  <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+  <span>{{ currentPage }} / {{ totalPages }}</span>
+  <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+</div> -->
+
+  
+  

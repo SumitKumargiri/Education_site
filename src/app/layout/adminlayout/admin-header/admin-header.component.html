@@ -1,0 +1,53 @@
+
+    <nav class="sidebar">
+        <!-- Your logo code -->
+        <div class="logo">
+            <a [routerLink]="'../home'">
+                <img src="../../../../assets/web-logo.png" alt="logo">
+            </a>
+        </div>
+        
+        <div class="navigation">
+          <ul class="list-unstyled">
+            <li>
+              <a routerLink="profile">
+                <i class="bi bi-person-circle"></i>Profile</a>
+            </li>
+            <li>
+              <a routerLink="home">
+                <i class="bi bi-house-door"></i>Home</a>
+            </li>
+
+            <li>
+              <a routerLink="student/list">
+                <i class="bi bi-people"></i>Student</a>
+                 <!-- Add sub-menu for Teacher Add and Student Add -->
+                <!-- <ul class="list-unstyled">
+                  <li>
+                    <a routerLink="add/teacher">Teacher Add</a>
+                  </li>
+                  <li>
+                    <a routerLink="add/student">Student Add</a>
+                  </li>
+                </ul> -->
+            </li>
+
+            <!-- <li>
+              <a routerLink="update">Update</a>
+            </li>
+            <li>
+              <a routerLink="student/list">List</a>
+            </li> -->
+            <li>
+              <a routerLink="logout" routerLink="../outer-home">
+                <i class="bi bi-x-lg"></i>Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+      

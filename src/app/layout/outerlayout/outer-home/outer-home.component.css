@@ -1,0 +1,54 @@
+
+.admin-image {
+    position: relative;
+}
+
+.admin-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* margin-top: 100px; */
+}
+
+/* .app-login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; 
+} */
+
+
+/* ++++++++++++ About section css +++++++++++++ */
+.heading{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin-left: 150px;
+}
+.heading h1{
+    margin-left: 250px;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.head-section{
+    display: flex;
+}
+
+.heading .head1{
+    margin-right: 10px;
+    color: rgb(202, 24, 24);
+}
+.heading .head2{
+    margin-right: 10px;
+    color:rgb(22, 22, 177);
+}
+
+.about-head{
+    /* border: 2px solid blue; */
+    margin-top: 100px;
+    text-align: justify;
+    font-size: 18px;
+}

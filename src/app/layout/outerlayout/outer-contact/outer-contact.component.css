@@ -1,0 +1,151 @@
+/* Styles for the iframe */
+iframe {
+    width: 100%; /* Adjust as needed */
+    height: 450px; /* Adjust as needed */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+}
+
+/* Optional: If you want to center the iframe */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* ++++++++ map-desing-end ++++++++++ */
+
+
+/* Header Styles */
+.head {
+    background-color: rgb(35, 35, 218);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-contact {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    margin-left: 200px;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+.contact-info .location , .mobileno , .email{
+    display: flex;
+    width: 300px;
+    /* border: 2px solid red; */
+    box-shadow: 5px 0px 5px 10px rgb(244, 238, 238);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.contact-info .location p , .mobileno p , .email p{
+    margin-left: 10px;
+}
+
+.location img,
+.mobileno img,
+.email img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .main-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-map,
+    .contact-form {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+/* ++++++++++++++ contact-form +++++++++ */
+
+/* Style for the contact form heading */
+.contact-form-heading h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Style for the contact form container */
+.contact-form1 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Style for the input fields container */
+.contact-form11, .contact-form12 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+/* Style for the input fields */
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the submit button */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Hover effect for the submit button */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+

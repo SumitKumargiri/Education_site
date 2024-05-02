@@ -1,0 +1,81 @@
+
+form {
+  width: 700px;
+  margin: 0 auto;
+}
+form h1{
+  font-size: 28px;
+  margin: 10px 0px 40px 80px;
+  color: rgb(219, 33, 33);
+  font-weight: bold;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  /* width: calc(100% - 110px);  */
+  width: 40%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.submit{
+  background-color: rgb(8, 8, 178);
+  border-radius: 20px;
+  border: none;
+}
+.cancle{
+  background-color: rgb(216, 16, 16);
+  border-radius: 20px;
+  border: none;
+}
+.clear{
+  background-color: gray;
+  border-radius: 20px;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.success-message,
+.error-message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.success-message {
+  background-color: #4caf50; 
+  color: #fff;
+}
+
+.error-message {
+  background-color: #f44336; 
+  color: #fff;
+}

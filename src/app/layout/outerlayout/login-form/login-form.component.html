@@ -1,0 +1,32 @@
+
+
+
+  <form [formGroup]="loginForm" (ngSubmit)="handleLogin()">
+    <h1>Login Here</h1>
+  
+    <div class="diff-button">
+      <button class="btn-diff">Admin Login</button>
+      <button class="btn-diff" (click)="userlogin()">Student Login</button>
+    </div>
+  
+    <input type="text" placeholder="Username" formControlName="username" required>
+    <input type="password" placeholder="Password" formControlName="password" required><br/>
+  
+    <div class="capcha_form" >
+      <ngx-recaptcha2 #captchaElem
+        [siteKey]="siteKey"
+        formControlName="recaptcha">
+      </ngx-recaptcha2>
+    </div>
+  
+    <button type="submit">Login</button>
+    <p>Not a member? <span> <a routerLink="/singup-form">Sign up now</a> </span></p>
+  </form>
+  
+
+  
+
+  
+
+  <router-outlet></router-outlet>
+  

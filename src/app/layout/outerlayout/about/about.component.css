@@ -1,0 +1,28 @@
+.heading{
+    width: 100%;
+}
+.heading h1{
+    text-align: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 30px;
+    background-color: rgb(15, 15, 167);
+    color: white;
+}
+
+.head-section{
+    display: flex;
+    width: 80%;
+    margin-left: 150px;
+    /* border: 2px solid green; */
+}
+
+
+
+.about-head{
+    /* border: 2px solid blue; */
+    margin-top: 100px;
+    text-align: justify;
+    font-size: 18px;
+}

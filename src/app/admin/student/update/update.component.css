@@ -1,0 +1,93 @@
+
+form{
+    width: 90%;
+    margin: 100px 0px 0px 40px;
+    gap: 30px;
+    /* background-color: red; */
+}
+
+.heading h1{
+    margin-bottom: 60px;
+    font-size: 28px;
+    margin-left: 250px;
+}
+
+.first_level, .secong_level, .third_level{
+    display: flex;
+    margin-top: 15px;
+}
+
+.first_level #id{
+    width: 300px;
+    margin-left: 40px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+.secong_level #email{
+    margin-left: 20px;
+    width: 300px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+.third_level #mobno{
+    margin-left: 8px;
+    width: 300px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.first_level2, .secong_level2, .third_level2{
+    margin-left: 80px;
+}
+
+.first_level2 #name{
+    width: 300px;
+    margin-left: 50px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.secong_level2 #city_name{
+    margin-left: 20px;
+    width: 300px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.third_level2 #gender{
+    margin-left: 40px;
+    width: 300px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+.update_btn{
+    margin-top: 40px;
+    background-color: blue;
+    margin-left: 200px;
+    margin-right: 20px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+}
+
+.cancle_btn{
+    margin-top: 40px;
+    background-color: rgb(225, 25, 25);
+    /* margin-left: 200px; */
+    margin-right: 20px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+}

@@ -1,0 +1,86 @@
+
+form {
+    width: 400px; 
+    margin: 0 auto; 
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .diff-button {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .btn-diff {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    background-color:none;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-diff:hover {
+    background-color: #0056b3;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .capcha_form {
+    /* margin-bottom: 20px;
+    width: 60%; */
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+  
+  button[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+
+
+

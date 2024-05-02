@@ -1,0 +1,65 @@
+<form (ngSubmit)="onSubmit()" #updateForm="ngForm">
+
+  <div class="heading">
+    <h1>Update Student Data</h1>
+  </div>
+
+  <div class="first_level">
+    <div class="first_level1">
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id" [(ngModel)]="formData.id" required>
+      </div>
+
+      <div class="first_level2">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+      </div>
+  </div>
+
+
+  <div class="secong_level">
+    <div class="secong_level1">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+      </div>
+
+    <div class="secong_level2">
+      <label for="city_name">city_name:</label>
+      <input type="city_name" id="city_name" name="city_name" [(ngModel)]="formData.city_name" required>
+    </div>
+  </div>
+
+
+  <div class="third_level">
+      <div class="third_level1">
+        <label for="mobno">mobno:</label>
+        <input type="mobno" id="mobno" name="mobno" [(ngModel)]="formData.mobno" required>
+      </div>
+
+      <div class="third_level2">
+        <label for="gender">gender:</label>
+        <input type="gender" id="gender" name="gender" [(ngModel)]="formData.gender" required>
+      </div>
+
+  </div>
+
+
+    <button type="submit" class="update_btn">Update</button>
+    <button type="button" routerLink="/admin/student/list"  class="cancle_btn">Cancel</button>
+    <div *ngIf="successMessageVisible" class="success-message">
+        Data update successfully
+      </div>
+      <div *ngIf="errorMessageVisible" class="error-message">
+        Error updating data
+      </div>
+  </form>
+
+
+
+
+
+  
+
+
+
+      

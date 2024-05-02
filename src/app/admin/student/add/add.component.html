@@ -1,0 +1,39 @@
+
+<form (ngSubmit)="onSubmit()" #addForm="ngForm">
+  <h1>Add Student Data</h1>
+    <div>
+      <label for="id">ID:</label>
+      <input type="number" id="id" name="id" [(ngModel)]="formData.id" required>
+    </div>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+    </div>
+    <div>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" [(ngModel)]="formData.city_name" required>
+    </div>
+    <div>
+      <label for="mobno">Mobile No:</label>
+      <input type="text" id="mobno" name="mobno" [(ngModel)]="formData.mobno" required>
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" name="gender" [(ngModel)]="formData.gender" required>
+    </div>
+    <button type="submit" class="submit">Submit</button>
+    <button type="button" routerLink="/admin/student/list" class="cancle">Cancel</button>
+    <button type="clear" (click)="clearForm()" class="clear">Clear</button>
+
+    <!-- <div *ngIf="successMessageVisible" class="success-message">
+        Data added successfully
+      </div>
+      <div *ngIf="errorMessageVisible" class="error-message">
+        Error adding data
+      </div> -->
+  </form>
+  
